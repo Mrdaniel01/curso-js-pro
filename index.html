@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>PlatziMediaPlayer.js</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/3190/3190916.svg">
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
@@ -19,35 +20,21 @@
         <source src="./assets/BigBuckBunny.mp4" />
       </video>
 
-      <button>Play/Pause</button>
+      <button class="play-btn" id="play_button">Play/Pause</button>
+      <button class="pause-btn" id="mute_button">muted/umuted</button>
     </main>
+    <div class="ps">
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perferendis nihil. Nulla iste rem saepe aperiam, perspiciatis beatae inventore, cupiditate sed obcaecati repudiandae sequi molestias hic explicabo optio ipsum expedita?Fugiat, necessitatibus? Minima incidunt accusantium distinctio temporibus perspiciatis atque in deserunt magnam, blanditiis architecto. Debitis dolorem deleniti neque libero ratione inventore natus consectetur aliquid necessitatibus consequatur tempore, repellat similique blanditiis?</p>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perferendis nihil. Nulla iste rem saepe aperiam, perspiciatis beatae inventore, cupiditate sed obcaecati repudiandae sequi molestias hic explicabo optio ipsum expedita?Fugiat, necessitatibus? Minima incidunt accusantium distinctio temporibus perspiciatis atque in deserunt magnam, blanditiis architecto. Debitis dolorem deleniti neque libero ratione inventore natus consectetur aliquid necessitatibus consequatur tempore, repellat similique blanditiis?</p>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perferendis nihil. Nulla iste rem saepe aperiam, perspiciatis beatae inventore, cupiditate sed obcaecati repudiandae sequi molestias hic explicabo optio ipsum expedita?Fugiat, necessitatibus? Minima incidunt accusantium distinctio temporibus perspiciatis atque in deserunt magnam, blanditiis architecto. Debitis dolorem deleniti neque libero ratione inventore natus consectetur aliquid necessitatibus consequatur tempore, repellat similique blanditiis?</p>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perferendis nihil. Nulla iste rem saepe aperiam, perspiciatis beatae inventore, cupiditate sed obcaecati repudiandae sequi molestias hic explicabo optio ipsum expedita?Fugiat, necessitatibus? Minima incidunt accusantium distinctio temporibus perspiciatis atque in deserunt magnam, blanditiis architecto. Debitis dolorem deleniti neque libero ratione inventore natus consectetur aliquid necessitatibus consequatur tempore, repellat similique blanditiis?</p>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perferendis nihil. Nulla iste rem saepe aperiam, perspiciatis beatae inventore, cupiditate sed obcaecati repudiandae sequi molestias hic explicabo optio ipsum expedita?Fugiat, necessitatibus? Minima incidunt accusantium distinctio temporibus perspiciatis atque in deserunt magnam, blanditiis architecto. Debitis dolorem deleniti neque libero ratione inventore natus consectetur aliquid necessitatibus consequatur tempore, repellat similique blanditiis?</p>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perferendis nihil. Nulla iste rem saepe aperiam, perspiciatis beatae inventore, cupiditate sed obcaecati repudiandae sequi molestias hic explicabo optio ipsum expedita?Fugiat, necessitatibus? Minima incidunt accusantium distinctio temporibus perspiciatis atque in deserunt magnam, blanditiis architecto. Debitis dolorem deleniti neque libero ratione inventore natus consectetur aliquid necessitatibus consequatur tempore, repellat similique blanditiis?</p>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perferendis nihil. Nulla iste rem saepe aperiam, perspiciatis beatae inventore, cupiditate sed obcaecati repudiandae sequi molestias hic explicabo optio ipsum expedita?Fugiat, necessitatibus? Minima incidunt accusantium distinctio temporibus perspiciatis atque in deserunt magnam, blanditiis architecto. Debitis dolorem deleniti neque libero ratione inventore natus consectetur aliquid necessitatibus consequatur tempore, repellat similique blanditiis?</p>
+    </div>
+    
 
-    <script>
-      const video = document.querySelector("video")
-      const button = document.querySelector("button")
-
-      function MediaPlayer(config) {
-        this.media = config.el
-      }
-      
-      MediaPlayer.prototype.play = function() {
-        this.media.play();
-      }
-      MediaPlayer.prototype.pause = function() {
-        this.media.pause();
-      }
-      MediaPlayer.prototype.togglePlay = function(){
-        if (this.media.paused) {
-           this.play() 
-          } else {
-           this.pause()
-          }
-      }
-      const player = new MediaPlayer( {el: video });
-
-      button.onclick = () => player.togglePlay(); 
-      
-
+    <script src="./assets/index.ts" type="module">
     </script>
   </body>
 </html>

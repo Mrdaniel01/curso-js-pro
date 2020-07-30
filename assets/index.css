@@ -36,3 +36,31 @@ main {
 .movie {
   width: 100%;
 }
+
+.ps {
+  width: 900px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.play-btn,
+.pause-btn {
+  width: 120px;
+  height: 30px;
+  border: none;
+  background-color: chocolate;
+  color: white;
+  margin: 5px;
+  outline: none;
+  box-shadow: 3px 3px 5px rgb(190, 190, 190);
+
+}
+
+.play-btn:active {
+  transform: scale(.9);
+}
+
+.pause-btn:active {
+  transform: scale(.9);
+}
