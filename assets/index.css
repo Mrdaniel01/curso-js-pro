@@ -35,9 +35,10 @@ main {
 
 .movie {
   width: 100%;
+  position: relative;
 }
 
-.ps {
+.comentarios {
   width: 900px;
   margin: 0 auto;
   font-size: 20px;
@@ -63,4 +64,42 @@ main {
 
 .pause-btn:active {
   transform: scale(.9);
+}
+
+.ads {
+  padding: 4px;
+  padding-right: 8px;
+  background: white;
+  width: 800px;
+
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ads__link {
+  display: flex;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ads__img {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.ads__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ads__title {
+  margin: 0;
+}
+.ads__body {
+  margin: 0;
 }
